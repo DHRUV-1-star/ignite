@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>IGNITE – Café Franchise Simulator</title>
+<link rel="stylesheet" href="style.css"></head><body><div class="w">
+<header><div><h1>IGNITE</h1><div class="sub">The ₹50 Lakh Café Challenge · Shree Lakshmi Café Franchise Simulator</div></div>
+<button class="g noprint" onclick="openOrg()">🔒 Organizer</button></header>
+
+<div class="grid" id="panels"></div>
+
+<div class="bar noprint">
+<button onclick="run()">▶ Simulate</button>
+<button class="g" onclick="loadEx()">Load test example (Player A)</button>
+<label class="sub"><input type="checkbox" id="adv" onchange="renderEv()"> Advanced mode (market events)</label>
+<button class="g hid" id="pbtn" onclick="window.print()">🖨 Print / Save PDF</button>
+</div>
+<div id="evbox" class="card hid" style="margin-top:12px"></div>
+<div id="out"></div>
+<p class="sub">Fictional competition parameters. Deterministic: same inputs always give same outputs. Operating profit ≠ recovery of the ₹50L investment. Winner = higher monthly operating profit. If equal, fixed published tiebreakers decide in order: stress-test profit → larger reserve → higher potential demand → higher kitchen capacity → less wasted capital. Only functionally identical strategies can end in a dead heat.</p>
+</div>
+<div id="modal"></div>
+
+<script src="script.js"></script></body></html>
